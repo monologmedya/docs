@@ -11,7 +11,7 @@ export const Navbar = () => {
       <InvertTheme>
         <Flex h="2xl" shrink={0} px={5} alignItems="center" bg="canvas-pure">
           <HStack w="1/3" alignItems="center" spacing={4} pl={12}>
-            <Link href={`/?spec=${apiDescriptionUrl}`}>
+            <Link href={`${process.env.PUBLIC_URL}/?spec=${apiDescriptionUrl}`}>
               <Image src={logo} h={6} />
             </Link>
           </HStack>
